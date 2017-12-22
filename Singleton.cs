@@ -79,7 +79,7 @@ namespace Platinio
 
 		protected virtual void Start()
 		{
-			T _instance = instance;
+			T instance = _instance;
 
 			if(!DestroyOnLoad)
 			{
