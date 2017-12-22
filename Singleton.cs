@@ -11,7 +11,7 @@ namespace Platinio
 	{
 		private static T m_instance = null;
 
-		public static T instance
+		public static T _instance
 		{
 			get
 			{
