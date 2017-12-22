@@ -8,5 +8,5 @@ public class MyClass : Singleton<MyClass>
 
 and create the static instance
 ```c#
-public static MyClass instance { get{ return ( (MyClass) _instance); } }
+public static MyClass instance { get{ return ( (MyClass) base.instance); } }
 ```
