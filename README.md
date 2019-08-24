@@ -1,6 +1,6 @@
 Quickstart
 ==============
-Just download and import [this](https://github.com/platinio/Singleton/releases/download/1.0/singleton.unitypackage) 
+Just download and import [this](https://github.com/platinio/Singleton/releases/download/1.0.1/singleton.unitypackage) 
 
 And don't forget to use the namespace
 
@@ -21,7 +21,7 @@ public class MyAwesomeSingleton : Singleton<MyAwesomeSingleton>
 }
 ```
 
-And dont forget to override the Start, Awake and OnApplicationQuit methods, if you need them, so everything can works as expected.
+And dont forget to override the Awake and OnApplicationQuit methods, if you need them, so everything can works as expected.
 
 ```c#
 using UnityEngine;
@@ -32,12 +32,6 @@ public class MyAwesomeSingleton : Singleton<MyAwesomeSingleton>
     protected override void Awake()
     {
         base.Awake();
-        //do something
-    }
-
-    protected override void Start()
-    {
-        base.Start();
         //do something
     }
 
