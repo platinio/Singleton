@@ -54,17 +54,14 @@ namespace Platinio
             if (instance != this)
             {
                 Destroy(gameObject);
+                return;
             }
-        }
 
-        protected virtual void Start()
-        {            
             if (!DestroyOnLoad)
             {
-                DontDestroyOnLoad(instance);
+                DontDestroyOnLoad( instance );
             }
         }
-
 
         protected virtual void OnApplicationQuit()
         {
