@@ -1,12 +1,6 @@
-# Singleton
-a singleton script for Unity
+Singleton
+==============
+Example of the singleton pattern in unity3D
 
-Create your class 
-```c#
-public class MyClass : Singleton<MyClass>
-```
-
-and create the static instance
-```c#
-public static MyClass instance { get{ return ( (MyClass) _instance); } }
-```
+Quickstart
+==============
